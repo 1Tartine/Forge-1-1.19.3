@@ -43,6 +43,7 @@ public class TutorialMod {
     private void addCreative(CreativeModeTabEvent.BuildContents event) {
         if (event.getTab() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.RED_PEARL);
+            event.accept(ModItems.CYAN_PEARL);
         }
     }
 
