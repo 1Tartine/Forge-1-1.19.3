@@ -12,6 +12,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.tartine.tutorialmod.item.ModCreativeModeTabs;
 import net.tartine.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -42,6 +43,11 @@ public class TutorialMod {
 
     private void addCreative(CreativeModeTabEvent.BuildContents event) {
         if (event.getTab() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.RED_PEARL);
+            event.accept(ModItems.CYAN_PEARL);
+        }
+
+        if (event.getTab() == ModCreativeModeTabs.TUTORIAL_TAB) {
             event.accept(ModItems.RED_PEARL);
             event.accept(ModItems.CYAN_PEARL);
         }

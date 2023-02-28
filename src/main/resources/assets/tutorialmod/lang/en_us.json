@@ -1,4 +1,6 @@
 {
   "item.tutorialmod.red_pearl": "Red Pearl",
-  "item.tutorialmod.cyan_pearl": "Cyan Pearl"
+  "item.tutorialmod.cyan_pearl": "Cyan Pearl",
+
+  "creativemodetab.tutorial_tab": "Tartine Utils"
 }
