@@ -1,8 +1,10 @@
 package net.tartine.tutorialmod.block;
 
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -21,11 +23,11 @@ public class ModBlocks {
 
     public static final  RegistryObject<Block> RED_PEARL_BLOCK = registerBlock("red_pearl_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(6f).requiresCorrectToolForDrops()));
+                    .strength(1f).requiresCorrectToolForDrops()));
 
     public static final  RegistryObject<Block> HAZARD_BLOCK = registerBlock("hazard_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(0.5f).sound(SoundType.AMETHYST)));
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(0.5f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST), UniformInt.of(10, 30)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

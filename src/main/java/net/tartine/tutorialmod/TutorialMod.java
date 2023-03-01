@@ -1,7 +1,6 @@
 package net.tartine.tutorialmod;
 
 import com.mojang.logging.LogUtils;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -50,6 +49,7 @@ public class TutorialMod {
 
         if(event.getTab() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.RED_PEARL_BLOCK);
+            event.accept(ModBlocks.HAZARD_BLOCK);
         }
 
         if (event.getTab() == ModCreativeModeTabs.TUTORIAL_TAB) {
