@@ -12,6 +12,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.tartine.tutorialmod.block.ModBlocks;
 import net.tartine.tutorialmod.item.ModCreativeModeTabs;
 import net.tartine.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
@@ -24,12 +25,12 @@ public class TutorialMod {
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    //we are ballin
 
     public TutorialMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
@@ -47,9 +48,16 @@ public class TutorialMod {
             event.accept(ModItems.CYAN_PEARL);
         }
 
+        if(event.getTab() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.RED_PEARL_BLOCK);
+        }
+
         if (event.getTab() == ModCreativeModeTabs.TUTORIAL_TAB) {
             event.accept(ModItems.RED_PEARL);
             event.accept(ModItems.CYAN_PEARL);
+
+            event.accept(ModBlocks.RED_PEARL_BLOCK);
+            event.accept(ModBlocks.HAZARD_BLOCK);
         }
     }
 

@@ -2,5 +2,13 @@
   "item.tutorialmod.red_pearl": "Red Pearl",
   "item.tutorialmod.cyan_pearl": "Cyan Pearl",
 
+
+
+  "block.tutorialmod.red_pearl_block": "Red Pearl Block",
+  "block.tutorialmod.hazard_block": "Hazard Block",
+
+
+
   "creativemodetab.tutorial_tab": "Tartine Utils"
+
 }
