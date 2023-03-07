@@ -1,0 +1,9 @@
+// 1.19.3	2023-03-06T19:31:39.3908605	Recipes
+83086bdc151094e2aace014b1bab758886132ff4 data/tutorialmod/advancements/recipes/building_blocks/red_pearl.json
+ed085881c6fef8a36e9e4ba053acad7a3bdd6dbd data/tutorialmod/advancements/recipes/misc/cyan_pearl_from_smelting_red_pearl.json
+95ab7ee9c867e8d5da94beeda6efabff375c9a09 data/tutorialmod/advancements/recipes/misc/hazard_block.json
+546296e48cafd22add1901499c63666559d26c7a data/tutorialmod/advancements/recipes/misc/red_pearl_block.json
+4d176baec4fe945c66104b8e922ec33e9ceae48b data/tutorialmod/recipes/cyan_pearl_from_smelting_red_pearl.json
+d31304e7a867a5a86b2a6d7583db3e0f75db0a31 data/tutorialmod/recipes/hazard_block.json
+d12d41e77d7948c090f388420a93ea3e0fe7dea3 data/tutorialmod/recipes/red_pearl.json
+1a58b172edab7fef020ac91fc7c0d99482e71c8a data/tutorialmod/recipes/red_pearl_block.json

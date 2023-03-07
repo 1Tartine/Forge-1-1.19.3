@@ -6,6 +6,7 @@ import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 import net.tartine.tutorialmod.TutorialMod;
+import net.tartine.tutorialmod.block.ModBlocks;
 
 public class ModBlockStateProvider extends BlockStateProvider {
     public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
@@ -14,7 +15,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        blockWithItem();
+        blockWithItem(ModBlocks.HAZARD_BLOCK);
+        blockWithItem(ModBlocks.RED_PEARL_BLOCK);
+
 
     }
 
