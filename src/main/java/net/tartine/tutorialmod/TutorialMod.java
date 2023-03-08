@@ -50,6 +50,7 @@ public class TutorialMod {
         if(event.getTab() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.RED_PEARL_BLOCK);
             event.accept(ModBlocks.HAZARD_BLOCK);
+            event.accept(ModBlocks.CAPACITOR_BLOCK);
         }
 
         if (event.getTab() == ModCreativeModeTabs.TUTORIAL_TAB) {
@@ -58,6 +59,7 @@ public class TutorialMod {
 
             event.accept(ModBlocks.RED_PEARL_BLOCK);
             event.accept(ModBlocks.HAZARD_BLOCK);
+            event.accept(ModBlocks.CAPACITOR_BLOCK);
         }
     }
 

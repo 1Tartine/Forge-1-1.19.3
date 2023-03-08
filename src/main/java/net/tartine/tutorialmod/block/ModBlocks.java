@@ -13,6 +13,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.tartine.tutorialmod.TutorialMod;
+import net.tartine.tutorialmod.block.custom.CapacitorBlock;
 import net.tartine.tutorialmod.item.ModItems;
 
 import java.util.function.Supplier;
@@ -28,6 +29,10 @@ public class ModBlocks {
     public static final  RegistryObject<Block> HAZARD_BLOCK = registerBlock("hazard_block",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(0.5f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST), UniformInt.of(10, 30)));
+
+    public static final  RegistryObject<Block> CAPACITOR_BLOCK = registerBlock("capacitor_block",
+            () -> new CapacitorBlock(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(1f).requiresCorrectToolForDrops().noOcclusion()));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
