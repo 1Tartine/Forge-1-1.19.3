@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "tutorialmod:block/capacitor_block"
+    },
+    "facing=south": {
+      "model": "tutorialmod:block/capacitor_block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "tutorialmod:block/capacitor_block",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "tutorialmod:block/capacitor_block",
+      "y": 90
+    }
+  }
+}
