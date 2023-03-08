@@ -56,6 +56,7 @@ public class TutorialMod {
         if (event.getTab() == ModCreativeModeTabs.TUTORIAL_TAB) {
             event.accept(ModItems.RED_PEARL);
             event.accept(ModItems.CYAN_PEARL);
+            event.accept(ModItems.SHARD1);
 
             event.accept(ModBlocks.RED_PEARL_BLOCK);
             event.accept(ModBlocks.HAZARD_BLOCK);

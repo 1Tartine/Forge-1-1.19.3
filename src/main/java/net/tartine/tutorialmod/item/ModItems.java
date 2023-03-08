@@ -17,6 +17,10 @@ public class ModItems {
     public static final RegistryObject<Item> CYAN_PEARL = ITEMS.register("cyan_pearl",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> SHARD1 = ITEMS.register("yellow_shard",
+            () -> new Item(new Item.Properties()));
+
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
